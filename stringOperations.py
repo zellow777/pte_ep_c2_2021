@@ -1,0 +1,20 @@
+str1 = "AZ almafán almák teremnek"
+print(("A szöveg hossza", len(str1)))
+str2 = "Terem"
+print("Az str2 megvan az str1-ben:", str1.find(str2))
+lowerStr2 = str2.lower()
+print(str2)
+print("A lowerStr2 megvan az str1.ben:", str1.find(lowerStr2))
+upperStr2 = str2.upper()
+print(str2, upperStr2)
+str3 = "user12"
+print("a lowerStr2 végig kisbetűs:", lowerStr2.islower())
+print("a lowerStr2 végig nagybetűs:", lowerStr2.isupper())
+print("A szövegek csak számjegyeket tartalmaznak:")
+print("\t", str1.isalpha())
+print("\t", str2.isalpha())
+print("\t", str3.isalpha())
+print("A szövegek csak betüt vagy számjegyet tartalmaznak:")
+print("\t", str1.isalnum())
+print("\t", str2.isalnum())
+print("\t", str3.isalnum())
