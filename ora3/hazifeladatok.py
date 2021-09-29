@@ -2,26 +2,26 @@
 print("Programozni tanulok".upper())
 
 #2.
-termekAr = int(input("Adja meg a termék eredeti árát:"))
+termekAr = int(input("Adja meg a termÃ©k eredeti Ã¡rÃ¡t:"))
 
 if termekAr < 10000:
 	kedvezmeny = 10
 else:
 	kedvezmeny = 20
 
-print("A termék kedvezményes ára", termekAr * (1 - kedvezmény / 100), "Ft", kedvezmeny, "% kedvezménnyel")
+kedvezmenyesAr = termekAr * (1 - kedvezmeny / 100)
+
+print("A termÃ©k kedvezmÃ©nyes Ã¡ra", kedvezmenyesAr, "Ft", kedvezmeny, "% kedvezmÃ©nnyel")
 
 #3.
-nem = input("Adja meg a nemét (lány=f, fiú=m):")
+nem = input("Adja meg a nemÃ©t (lÃ¡ny=f, fiÃº=m):")
 if nem == "m":
-	print("Nem játszhat a csapatban")
+	print("Nem jÃ¡tszhat a csapatban")
 elif nem == "f":
-	kor = input("Adja meg a korát:")
-		if kor <= 12 or kor >=10:
-			print("Játszhat a csapatban")
-		else:
-			print("Nem játszhat a csapatban")
+	kor = int(input("Adja meg a korÃ¡t:"))
+	if kor < 13 and kor > 9:
+		print("JÃ¡tszhat a csapatban")
+	else:
+		print("Nem jÃ¡tszhat a csapatban")
 else:
 	print("Helytelen adatokat adott meg.")
-
-
